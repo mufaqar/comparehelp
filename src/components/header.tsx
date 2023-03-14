@@ -57,9 +57,8 @@ export default function Header() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'block' : 'hidden'
-              }`}
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
+                }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-12 md:space-y-0">
                 <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
@@ -69,36 +68,36 @@ export default function Header() {
                 </li>
                 <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
                   <Link href="#">
-                  Product & Service
+                    Product & Service
                   </Link>
                 </li>
                 <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
                   <Link href="#">
-                  Price & Help
+                    Price & Help
                   </Link>
                 </li>
                 <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
                   <Link href="#">
-                  Personal Center
+                    Personal Center
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="flex justify-between md:mt-0 mt-5">
-                <button
-                 className="px-6 py-4 bg-transparent rounded-[67px] text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  Log in
-                </button>
-                <button
-                  className="px-6 py-4 bg-primary rounded-[67px] text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  Sign Up
-                </button>
-              </div>
+            <button
+              className="px-6 py-4 bg-transparent rounded-[67px] text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
+              onClick={() => setNavbar(!navbar)}
+            >
+              Log in
+            </button>
+            <button
+              className="px-6 py-4 bg-primary rounded-[67px] text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
+              onClick={() => setNavbar(!navbar)}
+            >
+              Sign Up
+            </button>
+          </div>
         </div>
       </nav>
     </header>

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {Banner} from '../components/imports';
+import {Banner, Partners, WhyUs} from '../components/imports';
 
 export default function Home() {
   return (
@@ -11,6 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      <Banner />
+     <Partners/>
+     <WhyUs/>
     </>
   )
 }
