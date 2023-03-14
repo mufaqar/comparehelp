@@ -9,7 +9,7 @@ function Banner() {
             <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 items-center bg-[url("/images/vector.png")] bg-right-top bg-contain bg-no-repeat py-20'>
                 <div>
                     <p className='text-2xl leading-7 font-extrabold text-primary Urbanist flex items-center'>
-                        <Image src={Img_url} alt="" className='w-10 h-w-10' /> Comprehelp
+                        <Image src={Img_url} alt="" className='w-8 h-10' /> Comprehelp
                     </p>
                     <h2 className='text-7xl leading-[90px] font-extrabold text-shade/90'>
                         Generate several questions in a <br />

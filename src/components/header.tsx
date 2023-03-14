@@ -62,22 +62,22 @@ export default function Header() {
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-12 md:space-y-0">
-                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary font-bold">
+                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
                   <Link href="#">
                     Home
                   </Link>
                 </li>
-                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary font-bold">
+                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
                   <Link href="#">
                   Product & Service
                   </Link>
                 </li>
-                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary font-bold">
+                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
                   <Link href="#">
                   Price & Help
                   </Link>
                 </li>
-                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary font-bold">
+                <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
                   <Link href="#">
                   Personal Center
                   </Link>
