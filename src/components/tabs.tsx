@@ -10,7 +10,7 @@ const Tabs = () => {
             <div className="flex flex-wrap">
                 <div className="w-full">
                     <ul
-                        className="flex mb-20 list-none flex-wrap flex-row p-1.5 max-w-[650px] mx-auto bg-shade/10 rounded-[40px]"
+                        className="flex md:mb-20 mb-10 list-none flex-wrap flex-row p-1.5 max-w-[650px] mx-auto bg-shade/10 rounded-[40px]"
                         role="tablist"
                     >
                         <li className="-mb-px mr-1 last:mr-0 flex-auto text-center">
@@ -101,7 +101,7 @@ const Tabs = () => {
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
                                             <h3 className="text-[42px] leading-[50px] font-extrabold Urbanist text-primary mb-5">
-                                                Select Articles
+                                                Select Articles2
                                             </h3>
                                             <ul className="list-decimal list-inside gap-3 grid">
                                                 <li className="text-base font-medium text-shade/90">
@@ -124,7 +124,7 @@ const Tabs = () => {
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
                                             <h3 className="text-[42px] leading-[50px] font-extrabold Urbanist text-primary mb-5">
-                                                Select Articles
+                                                Select Articles3
                                             </h3>
                                             <ul className="list-decimal list-inside gap-3 grid">
                                                 <li className="text-base font-medium text-shade/90">

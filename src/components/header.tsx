@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Logo from '../../public/logo.svg';
+import Logo from './logo';
 
 
 export default function Header() {
@@ -15,7 +15,7 @@ export default function Header() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link href="#">
-                <Image src={Logo} alt="logo" />
+              <Logo Fill_color="#7933D1"/>
               </Link>
               <div className="md:hidden">
                 <button
