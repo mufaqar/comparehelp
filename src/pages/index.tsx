@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {Banner, Partners, WhyUs} from '../components/imports';
+import {Banner, HowItWorks, Partners, UsingHelp, WhyUs} from '../components/imports';
 
 export default function Home() {
   return (
@@ -13,6 +13,8 @@ export default function Home() {
      <Banner />
      <Partners/>
      <WhyUs/>
+     <UsingHelp/>
+     <HowItWorks/>
     </>
   )
 }

@@ -10,7 +10,7 @@ import Logo6 from '../../public/images/partnr6.png';
 
 function Partners() {
     return (
-        <section className='py-20 bg-[url(/svg/circle1.svg)] bg-no-repeat bg-right bg-auto'>
+        <section className='py-20 bg-[url(/svg/circle1.svg)] bg-no-repeat bg-right bg-auto' style={{backgroundSize: "9%"}}>
             <div className='container mx-auto px-4'>
                 <div className='max-w-[509px] mx-auto mb-14'>
                     <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto text-center relative'>

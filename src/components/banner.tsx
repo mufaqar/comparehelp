@@ -11,7 +11,7 @@ function Banner() {
                     <p className='text-2xl leading-7 font-extrabold text-primary Urbanist flex items-center'>
                         <Image src={Img_url} alt="" className='w-8 h-10' /> Comprehelp
                     </p>
-                    <h2 className='text-7xl leading-[90px] font-extrabold text-shade/90'>
+                    <h2 className='md:text-7xl md:leading-[90px] text-[40px] leading-[50px] font-extrabold text-shade/90'>
                         Generate several questions in a <br />
                         <span className='text-primary'>
                             single click.
