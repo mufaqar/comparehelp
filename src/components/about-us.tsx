@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import Img_url from '../../public/svg/fram1.svg';
 import { BiEnvelope } from 'react-icons/bi';
-import {AiFillInstagram} from 'react-icons/ai';
-import {FaFacebookF, FaLinkedinIn, FaTwitter} from 'react-icons/fa';
-import {BsFillTelephoneFill} from 'react-icons/bs';
-import {HiLocationMarker} from 'react-icons/hi'
+import { AiFillInstagram } from 'react-icons/ai';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { HiLocationMarker } from 'react-icons/hi'
 import Link from 'next/link';
 import Follow from '../../public/images/follow.png';
 import Contact_img from '../../public/images/contact.png';
+import H2before from './h2before';
 
 function AboutUs() {
     return (
@@ -16,7 +16,7 @@ function AboutUs() {
             <div className='container mx-auto px-4 relative z-10'>
                 <div className='max-w-[509px] mx-auto mb-12'>
                     <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
-                        <Image src={Img_url} alt="" className='w-8 h-10 transform rotate-180 absolute top-[-20px] sm:left-[-25px] left-[10px]' />
+                        <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         About Us
                     </h2>
                 </div>

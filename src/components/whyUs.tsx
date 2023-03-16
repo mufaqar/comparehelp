@@ -1,17 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
-import Img_url from '../../public/svg/fram1.svg';
 import Progresbar from '../../public/images/progresbar.png';
-import Before_Img from '../../public/svg/frame.svg';
-import After_Img from '../../public/svg/fram1.svg';
+import H2before from './h2before';
 
 function WhyUs() {
     return (
         <section className='py-20 bg-[url(/svg/circle2.svg)] bg-no-repeat bg-left-bottom bg-auto' style={{backgroundSize: "9%", backgroundPositionY: "115%"}}>
             <div className='container mx-auto px-4'>
                 <div className='max-w-[509px] mx-auto mb-14'>
-                    <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto text-center relative'>
-                        <Image src={Img_url} alt="" className='w-8 h-10 transform rotate-180 absolute top-[-20px] left-[-25px]' />
+                <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
+                        <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         Why us
                     </h2>
                 </div>
