@@ -1,13 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Img_url from '../../public/svg/fram1.svg';
-import Main_Img from '../../public/images/main-bg.png';
 import TabsRender from './tabs';
 
 function HowItWorks() {
     return (
-        <section className='py-20 bg-[url(/svg/half-circle.svg)] bg-no-repeat bg-right relative' style={{ backgroundSize: "15%", backgroundPositionY: "-70%" }}>
-            <Image src={Main_Img} alt="" className='absolute top-0 bottom-0 left-0 right-0 object-cover h-full w-full' />
+        <section className='py-20 bg-[url(/images/main-bg.png)] bg-no-repeat bg-center bg-cover relative'>
             <div className='container mx-auto px-4 relative z-10'>
                 <div className='max-w-[509px] mx-auto mb-12'>
                     <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
