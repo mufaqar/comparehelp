@@ -2,10 +2,12 @@ import Image from 'next/image';
 import React from 'react';
 import Progresbar from '../../public/images/progresbar.png';
 import H2before from './h2before';
+import Progressbar from './progressbar';
 
 function WhyUs() {
     return (
         <section className='py-20 bg-[url(/svg/circle2.svg)] bg-no-repeat bg-left-bottom bg-auto' style={{backgroundSize: "9%", backgroundPositionY: "115%"}}>
+            <Progressbar/>
             <div className='container mx-auto px-4'>
                 <div className='max-w-[509px] mx-auto mb-14'>
                 <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
