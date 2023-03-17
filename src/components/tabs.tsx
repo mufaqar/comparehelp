@@ -48,7 +48,7 @@ const Tabs = () => {
                                 href="#link2"
                                 role="tablist"
                             >
-                                Generate
+                                Generate 01
                             </a>
                         </li>
                         <li className="-mb-px mr-1 last:mr-0 flex-auto text-center">
@@ -85,10 +85,10 @@ const Tabs = () => {
                                                     Select from different themes, difficulty and length of news
                                                 </li>
                                                 <li className="text-base font-medium text-shade/90">
-                                                Input the text
+                                                    Input the text
                                                 </li>
                                                 <li className="text-base font-medium text-shade/90">
-                                                Select the level of simplification of the article
+                                                    Select the level of simplification of the article
                                                 </li>
                                             </ul>
                                         </div>
@@ -98,7 +98,7 @@ const Tabs = () => {
                                     </div>
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                                <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
+                                    <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
                                             <h3 className="md:text-[42px] md:leading-[50px] text-3xl font-extrabold Urbanist text-primary mb-5">
                                                 Select Articles2
@@ -108,10 +108,10 @@ const Tabs = () => {
                                                     Select from different themes, difficulty and length of news
                                                 </li>
                                                 <li className="text-base font-medium text-shade/90">
-                                                Input the text
+                                                    Input the text
                                                 </li>
                                                 <li className="text-base font-medium text-shade/90">
-                                                Select the level of simplification of the article
+                                                    Select the level of simplification of the article
                                                 </li>
                                             </ul>
                                         </div>
@@ -121,7 +121,7 @@ const Tabs = () => {
                                     </div>
                                 </div>
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                                <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
+                                    <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
                                             <h3 className="md:text-[42px] md:leading-[50px] text-3xl font-extrabold Urbanist text-primary mb-5">
                                                 Select Articles3
@@ -131,10 +131,10 @@ const Tabs = () => {
                                                     Select from different themes, difficulty and length of news
                                                 </li>
                                                 <li className="text-base font-medium text-shade/90">
-                                                Input the text
+                                                    Input the text
                                                 </li>
                                                 <li className="text-base font-medium text-shade/90">
-                                                Select the level of simplification of the article
+                                                    Select the level of simplification of the article
                                                 </li>
                                             </ul>
                                         </div>
