@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>CompareHelp | Collection of Personal Data Statement</title>
-        <meta name="description" content="Generate several questions in a single click." />
+        <meta name="description" content="Generate several questions" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
