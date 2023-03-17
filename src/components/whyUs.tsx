@@ -1,22 +1,26 @@
-import Image from 'next/image';
 import React from 'react';
 import H2before from './h2before';
 import Progressbar from './progressbar';
+import { motion, Variants } from "framer-motion";
+import { fadeUp } from '@/animation';
 
 function WhyUs() {
     return (
-        <section className='py-20 bg-[url(/svg/circle2.svg)] bg-no-repeat bg-left-bottom bg-auto' style={{ backgroundSize: "9%", backgroundPositionY: "115%" }}>
-            <div className="flex flex-col gap-2 p-4">
-
-
-            </div>
+        <motion.section
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ staggerChildren: 0.2 }}
+            className='py-20 bg-[url(/svg/circle2.svg)] bg-no-repeat bg-left-bottom bg-auto' style={{ backgroundSize: "9%", backgroundPositionY: "115%" }}>
             <div className='container mx-auto px-4'>
-                <div className='max-w-[509px] mx-auto mb-14'>
+                <motion.div
+                    variants={fadeUp}
+                    className='max-w-[509px] mx-auto mb-14'>
                     <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
                         <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         Why us
                     </h2>
-                </div>
+                </motion.div>
                 <div className='bg-shade/10 rounded-[24px] md:p-[60px] p-10 relative'>
                     <svg className='absolute sm:top-[-20px] sm:left-[-30px] top-[-15px] left-[-20px] sm:w-auto w-[25px]' width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <g clipPath="url(#clip0_6_314)">
@@ -30,7 +34,9 @@ function WhyUs() {
                             </clipPath>
                         </defs>
                     </svg>
-                    <div className='flex flex-col gap-12 justify-center'>
+                    <motion.div
+                        variants={fadeUp}
+                        className='flex flex-col gap-12 justify-center'>
                         <p className='md:text-[32px] md:leading-[38.4px] text-2xl font-semibold Urbanist text-primary text-center max-w-[612px] mx-auto'>
                             Don’t waste your time in finding a suitable quiz. The upper display shows
                         </p>
@@ -49,7 +55,7 @@ function WhyUs() {
                         >
                             Action Button
                         </button>
-                    </div>
+                    </motion.div>
                     <svg className='absolute sm:bottom-[-35px] sm:right-[-35px] bottom-[-30px] right-[-15px] sm:w-auto w-[25px]' width="46" height="56" viewBox="0 0 46 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_10_146)">
                             <path d="M17.4463 4.59146C26.6875 11.5939 35.6231 18.982 44.3246 26.6568C44.9963 27.2464 45.3816 26.1718 45.4187 25.6722C45.4814 24.783 45.105 23.8276 44.4533 23.2382C35.8335 15.4446 26.8275 8.08551 17.5766 1.06296C16.8544 0.512613 16.4902 1.50752 16.4521 2.07704C16.3999 2.92638 16.7438 4.0614 17.4463 4.59146Z" fill="#7933D1" />
@@ -64,7 +70,7 @@ function WhyUs() {
                     </svg>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

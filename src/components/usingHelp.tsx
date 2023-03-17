@@ -3,20 +3,29 @@ import React from 'react';
 import Speed from '../../public/images/speed.png';
 import Time from '../../public/images/time.png';
 import Cost from '../../public/images/cost.png';
+import { motion, Variants } from "framer-motion";
+import { fadeUp } from '@/animation';
 
 function UsingHelp() {
     return (
-        <section className=''>
+        <motion.section
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ staggerChildren: 0.2 }}
+            className=''>
             <div className='py-20 bg-primary'>
                 <div className='container mx-auto px-4'>
-                    <div className='max-w-[535px] mx-auto mb-14'>
+                    <motion.div
+                        variants={fadeUp}
+                        className='max-w-[535px] mx-auto mb-14'>
                         <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold Urbanist text-white text-center'>
                             After Using CompreHelp
                         </h2>
                         <p className='text-lg leading-6 font-medium Urbanist text-white text-center'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut ex eget augue interdum pellentesque. Phasellus nisi nisi,
                         </p>
-                    </div>
+                    </motion.div>
                     <div className='relative'>
                         <svg className='absolute sm:top-[-20px] sm:left-[-30px] top-[-15px] left-[-20px] sm:w-auto w-[25px]' width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" >
                             <g clipPath="url(#clip0_6_314)">
@@ -81,7 +90,7 @@ function UsingHelp() {
                 </div>
             </div>
             <div className='bg-[url(/svg/half-circle.svg)] bg-no-repeat bg-right-bottom bg-auto pb-40'></div>
-        </section>
+        </motion.section>
     )
 }
 

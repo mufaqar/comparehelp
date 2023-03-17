@@ -7,6 +7,8 @@ import Image from 'next/image';
 import Customer1 from '../../public/images/customer1.png';
 import H2before from './h2before';
 import Slider from "react-slick";
+import { motion, Variants } from "framer-motion";
+import { fadeUp } from '@/animation';
 
 export default class Feedback extends Component {
     state = {
@@ -27,11 +29,17 @@ export default class Feedback extends Component {
             afterChange: (current: any) => this.setState({ activeSlide2: current + 1 })
         };
         return (
-            <section className='pb-20 '>
+            <motion.section
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ staggerChildren: 0.2 }}
+                className='pb-20 '>
                 <div className='pb-40 pt-20 bg-dark-blue z-10 relative'>
                     <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
-                        <div>
-                            <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-white Urbanist mb-14'>
+                        <motion.div
+                            variants={fadeUp}>
+                            <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-white Urbanist mb-14 max-w-[569px]'>
                                 What
                                 <span className='text-primary before:content-[""] before:bg-[url(/images/client-vector.png)] before:bg-auto before:bg-no-repeat before:bg-center before:w-full before:h-2 before:absolute before:bottom-0 relative mx-1'>
                                     Our Client</span>says about us
@@ -39,7 +47,7 @@ export default class Feedback extends Component {
                             <Link href="#" className='text-lg leading-[21px] font-bold Urbanist text-white flex'>
                                 See more Testimonials <BsArrowUpRight className='ml-3 border-b ' />
                             </Link>
-                        </div>
+                        </motion.div>
                         <div className='relative'>
                             <Slider {...settings}>
                                 <div>
@@ -216,7 +224,8 @@ export default class Feedback extends Component {
                 </div>
                 <div className='bg-[url(/images/right-circle.png)] bg-no-repeat bg-left-bottom bg-contain'>
                     <div className='z-10 relative -mt-28 mb-10 container mx-auto  bg-primary md:p-[60px] p-10 rounded-3xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
-                        <div>
+                        <motion.div
+                            variants={fadeUp}>
                             <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-white max-w-fit Urbanist relative'>
                                 <H2before Fill_color="#ffffff" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                                 Subscribe Us
@@ -224,8 +233,10 @@ export default class Feedback extends Component {
                             <p className='text-lg leading-6 font-medium Urbanist text-white max-w-[364px]'>
                                 Sign in to subscribe now to get the latest discounts and product news!
                             </p>
-                        </div>
-                        <div className='subscribtion-form'>
+                        </motion.div>
+                        <motion.div
+                            variants={fadeUp}
+                            className='subscribtion-form'>
                             <form action="#">
                                 <div className="flex md:flex-row flex-col items-center gap-5 md:justify-end">
                                     <div className='bg-white/20 py-4 px-6 rounded-[67px] md:w-[391px] w-auto flex gap-3 items-center text-white border border-white/60'>
@@ -240,10 +251,10 @@ export default class Feedback extends Component {
                                     </button>
                                 </div>
                             </form>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         );
     }
 }

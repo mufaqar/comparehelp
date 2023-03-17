@@ -10,8 +10,8 @@ function Banner() {
         <motion.section
             initial={"offscreen"}
             whileInView={"onscreen"}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ staggerChildren: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ staggerChildren: 0.2 }}
             className='py-20'>
             <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 items-center bg-[url("/images/vector.png")] bg-right-top bg-contain bg-no-repeat '>
                 <motion.div

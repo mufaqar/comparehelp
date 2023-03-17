@@ -9,17 +9,25 @@ import Link from 'next/link';
 import Follow from '../../public/images/follow.png';
 import Contact_img from '../../public/images/contact.png';
 import H2before from './h2before';
+import { motion, Variants } from "framer-motion";
+import { fadeUp } from '@/animation';
 
 function AboutUs() {
     return (
-        <section className='py-20'>
+        <motion.section
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ staggerChildren: 0.2 }}
+            className='py-20'>
             <div className='container mx-auto px-4 relative z-10'>
-                <div className='max-w-[509px] mx-auto mb-12'>
+                <motion.div
+                variants={fadeUp} className='max-w-[509px] mx-auto mb-12'>
                     <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
                         <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         About Us
                     </h2>
-                </div>
+                </motion.div>
                 <div className='relative'>
                     <svg className='absolute sm:top-[-20px] sm:left-[-30px] top-[-15px] left-[-20px] sm:w-auto w-[25px]' width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <g clipPath="url(#clip0_6_314)">
@@ -123,7 +131,7 @@ function AboutUs() {
                     </svg>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
