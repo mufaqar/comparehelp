@@ -2,12 +2,20 @@ import Image from 'next/image';
 import React from 'react';
 import Img_url from '../../public/svg/frame.svg';
 import Girl from '../../public/images/girl.png';
+import { motion, Variants } from "framer-motion";
+import { fadeUp } from '@/animation';
 
 function Banner() {
     return (
-        <section className='py-20'>
+        <motion.section
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ staggerChildren: 0.5 }}
+            className='py-20'>
             <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 items-center bg-[url("/images/vector.png")] bg-right-top bg-contain bg-no-repeat '>
-                <div>
+                <motion.div
+                    variants={fadeUp}>
                     <p className='text-2xl leading-7 font-extrabold text-primary Urbanist flex items-center'>
                         <Image src={Img_url} alt="" className='w-8 h-10' /> Comprehelp
                     </p>
@@ -32,12 +40,13 @@ function Banner() {
                             Buy now
                         </button>
                     </div>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                variants={fadeUp}>
                     <Image src={Girl} alt="" />
-                </div>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
