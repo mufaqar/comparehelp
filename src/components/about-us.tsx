@@ -15,7 +15,7 @@ function AboutUs() {
         <section className='py-20'>
             <div className='container mx-auto px-4 relative z-10'>
                 <div className='max-w-[509px] mx-auto mb-12'>
-                    <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
+                    <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
                         <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         About Us
                     </h2>
@@ -36,7 +36,7 @@ function AboutUs() {
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-12'>
                         <div className='w-full h-full bg-gradient-to-t relative from-[#e3ddec79] md:px-12 md:py-12 py-10 px-5 rounded-[24px] border border-shade/10'>
                             <div>
-                                <h3 className='text-[32px] leading-[38px] font-bold Urbanist text-shade mb-8'>
+                                <h3 className='md:text-[32px] md:leading-[38px] text-2xl font-bold Urbanist text-shade mb-8'>
                                     Follow Us
                                 </h3>
                                 <ul className='grid gap-4'>
@@ -78,7 +78,7 @@ function AboutUs() {
                         </div>
                         <div className='w-full h-full bg-gradient-to-t relative from-[#e3ddec79] md:px-12 md:py-12 py-10 px-5 rounded-[24px] border border-shade/10'>
                             <div>
-                                <h3 className='text-[32px] leading-[38px] font-bold Urbanist text-shade mb-8'>
+                                <h3 className='md:text-[32px] md:leading-[38px] text-2xl font-bold Urbanist text-shade mb-8'>
                                     Contact Us
                                 </h3>
                                 <ul className='grid gap-4'>

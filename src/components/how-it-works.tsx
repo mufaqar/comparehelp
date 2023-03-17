@@ -7,7 +7,7 @@ function HowItWorks() {
         <section className='py-20 bg-[url(/images/main-bg.png)] bg-no-repeat bg-center bg-cover relative'>
             <div className='container mx-auto px-4 relative z-10'>
                 <div className='max-w-[509px] mx-auto mb-12'>
-                <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
+                <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
                         <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         How It Works
                     </h2>

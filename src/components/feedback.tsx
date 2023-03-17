@@ -31,9 +31,9 @@ export default class Feedback extends Component {
                 <div className='pb-40 pt-20 bg-dark-blue z-10 relative'>
                     <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
                         <div>
-                            <h2 className='text-5xl leading-[57px] font-extrabold text-white Urbanist mb-14'>
+                            <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-white Urbanist mb-14'>
                                 What
-                                <span className='text-primary md:before:content-[url(/images/client-vector.png)] before:none before:absolute before:-bottom-5 relative mx-1'>
+                                <span className='text-primary before:content-[""] before:bg-[url(/images/client-vector.png)] before:bg-auto before:bg-no-repeat before:bg-center before:w-full before:h-2 before:absolute before:bottom-0 relative mx-1'>
                                     Our Client</span>says about us
                             </h2>
                             <Link href="#" className='text-lg leading-[21px] font-bold Urbanist text-white flex'>
@@ -217,7 +217,7 @@ export default class Feedback extends Component {
                 <div className='bg-[url(/images/right-circle.png)] bg-no-repeat bg-left-bottom bg-contain'>
                     <div className='z-10 relative -mt-28 mb-10 container mx-auto  bg-primary md:p-[60px] p-10 rounded-3xl grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
                         <div>
-                            <h2 className='text-5xl leading-[57px] font-extrabold text-white max-w-fit Urbanist relative'>
+                            <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-white max-w-fit Urbanist relative'>
                                 <H2before Fill_color="#ffffff" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                                 Subscribe Us
                             </h2>

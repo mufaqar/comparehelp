@@ -77,7 +77,7 @@ const Tabs = () => {
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                                     <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
-                                            <h3 className="text-[42px] leading-[50px] font-extrabold Urbanist text-primary mb-5">
+                                            <h3 className="md:text-[42px] md:leading-[50px] text-3xl font-extrabold Urbanist text-primary mb-5">
                                                 Select Articles
                                             </h3>
                                             <ul className="list-decimal list-inside gap-3 grid">
@@ -100,7 +100,7 @@ const Tabs = () => {
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
-                                            <h3 className="text-[42px] leading-[50px] font-extrabold Urbanist text-primary mb-5">
+                                            <h3 className="md:text-[42px] md:leading-[50px] text-3xl font-extrabold Urbanist text-primary mb-5">
                                                 Select Articles2
                                             </h3>
                                             <ul className="list-decimal list-inside gap-3 grid">
@@ -123,7 +123,7 @@ const Tabs = () => {
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
-                                            <h3 className="text-[42px] leading-[50px] font-extrabold Urbanist text-primary mb-5">
+                                            <h3 className="md:text-[42px] md:leading-[50px] text-3xl font-extrabold Urbanist text-primary mb-5">
                                                 Select Articles3
                                             </h3>
                                             <ul className="list-decimal list-inside gap-3 grid">

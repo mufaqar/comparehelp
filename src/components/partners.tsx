@@ -13,7 +13,7 @@ function Partners() {
         <section className='py-20 bg-[url(/svg/circle1.svg)] bg-no-repeat bg-right bg-auto' style={{backgroundSize: "9%"}}>
             <div className='container mx-auto px-4'>
                 <div className='max-w-[509px] mx-auto mb-14'>
-                <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
+                <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
                         <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         Data of our Partners
                     </h2>

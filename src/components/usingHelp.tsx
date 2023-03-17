@@ -10,7 +10,7 @@ function UsingHelp() {
             <div className='py-20 bg-primary'>
                 <div className='container mx-auto px-4'>
                     <div className='max-w-[535px] mx-auto mb-14'>
-                        <h2 className='text-5xl leading-[57px] font-extrabold Urbanist text-white text-center'>
+                        <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold Urbanist text-white text-center'>
                             After Using CompreHelp
                         </h2>
                         <p className='text-lg leading-6 font-medium Urbanist text-white text-center'>

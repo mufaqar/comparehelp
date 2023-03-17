@@ -12,12 +12,12 @@ function WhyUs() {
             </div>
             <div className='container mx-auto px-4'>
                 <div className='max-w-[509px] mx-auto mb-14'>
-                    <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
+                    <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
                         <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         Why us
                     </h2>
                 </div>
-                <div className='bg-shade/10 rounded-[24px] p-[60px] relative'>
+                <div className='bg-shade/10 rounded-[24px] md:p-[60px] p-10 relative'>
                     <svg className='absolute sm:top-[-20px] sm:left-[-30px] top-[-15px] left-[-20px] sm:w-auto w-[25px]' width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" >
                         <g clipPath="url(#clip0_6_314)">
                             <path d="M34.8674 14.1346L30.5292 7.38486L28.4278 4.1202C27.6874 2.97074 26.8584 1.84228 26.217 0.63509C25.9824 0.199451 26.4204 0.0157485 26.7958 2.54845e-06C27.2859 -0.0209921 27.9064 0.183705 28.2088 0.587852C29.0379 1.69007 29.7314 2.91301 30.477 4.07296L32.5783 7.33762L36.9218 14.0874C37.2033 14.523 36.6767 14.7225 36.3221 14.7382C35.8477 14.7592 35.1437 14.5598 34.8674 14.1294V14.1346Z" fill="#7933D1" />
@@ -31,10 +31,10 @@ function WhyUs() {
                         </defs>
                     </svg>
                     <div className='flex flex-col gap-12 justify-center'>
-                        <p className='text-[32px] leading-[38.4px] font-semibold Urbanist text-primary text-center max-w-[612px] mx-auto'>
+                        <p className='md:text-[32px] md:leading-[38.4px] text-2xl font-semibold Urbanist text-primary text-center max-w-[612px] mx-auto'>
                             Don’t waste your time in finding a suitable quiz. The upper display shows
                         </p>
-                        <div className='max-w-[760px] mt-16'>
+                        <div className='max-w-[760px] lg:ml-[20%] lg:mr-[20%] mt-16'>
                             <Progressbar
                                 className="max-w-[760px] h-9 mx-auto"
                                 defaultValue={70}
