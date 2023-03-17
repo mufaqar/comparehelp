@@ -48,7 +48,7 @@ const Tabs = () => {
                                 href="#link2"
                                 role="tablist"
                             >
-                                Generate 01
+                                Generate 02
                             </a>
                         </li>
                         <li className="-mb-px mr-1 last:mr-0 flex-auto text-center">
