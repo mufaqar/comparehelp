@@ -1,16 +1,18 @@
 import Image from 'next/image';
 import React from 'react';
-import Progresbar from '../../public/images/progresbar.png';
 import H2before from './h2before';
 import Progressbar from './progressbar';
 
 function WhyUs() {
     return (
-        <section className='py-20 bg-[url(/svg/circle2.svg)] bg-no-repeat bg-left-bottom bg-auto' style={{backgroundSize: "9%", backgroundPositionY: "115%"}}>
-            <Progressbar/>
+        <section className='py-20 bg-[url(/svg/circle2.svg)] bg-no-repeat bg-left-bottom bg-auto' style={{ backgroundSize: "9%", backgroundPositionY: "115%" }}>
+            <div className="flex flex-col gap-2 p-4">
+
+
+            </div>
             <div className='container mx-auto px-4'>
                 <div className='max-w-[509px] mx-auto mb-14'>
-                <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
+                    <h2 className='text-5xl leading-[57px] font-extrabold text-shade/90 max-w-fit mx-auto Urbanist text-center relative'>
                         <H2before Fill_color="#7933D1" Custom_class="absolute top-[-30px] left-[-25px] w-[32px] transform rotate-180" />
                         Why us
                     </h2>
@@ -28,11 +30,17 @@ function WhyUs() {
                             </clipPath>
                         </defs>
                     </svg>
-                    <div className='flex flex-col gap-12'>
+                    <div className='flex flex-col gap-12 justify-center'>
                         <p className='text-[32px] leading-[38.4px] font-semibold Urbanist text-primary text-center max-w-[612px] mx-auto'>
                             Don’t waste your time in finding a suitable quiz. The upper display shows
                         </p>
-                        <Image src={Progresbar} alt="" className='mx-auto' />
+                        <div className='max-w-[760px] mt-16'>
+                            <Progressbar
+                                className="max-w-[760px] h-9 mx-auto"
+                                defaultValue={70}
+                                step={10}
+                            />
+                        </div>
                         <p className='text-xl font-medium Urbanist text-shade/60 text-center max-w-[673px] mx-auto'>
                             Whenever x articles are generated, the lower display shows: It saves y hour and increases efficiency by z%.
                         </p>
