@@ -35,7 +35,7 @@ function Banner() {
                             Go into
                         </button>
                         <button
-                            className="px-6 py-4 bg-transparent rounded-[67px] text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
+                            className="px-6 py-4 bg-transparent rounded-[67px] text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 border-2 border-primary hover:border-primary/70 md:ml-2 outline-none w-[120px]"
                         >
                             Buy now
                         </button>

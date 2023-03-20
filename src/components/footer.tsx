@@ -7,10 +7,8 @@ function Footer() {
         <footer className='bg-dark-blue pt-20 pb-6'>
             <div className='container mx-auto px-4 grid md:grid-cols-4 grid-cols-1 gap-10 mb-20'>
                 <div>
-                    <Logo Fill_color="#ffffff" />
-                    <p className='text-lg leading-6 font-medium Urbanist text-white/60 mt-3'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus id erat eu cursus. Sed aliquet interdum nulla ac luctus.
-                    </p>
+                    <Logo Fill_color="text-white" />
+                    
                 </div>
                 <div>
                     <h3 className='text-base leading-[19px] font-semibold Urbanist text-white mb-6'>
@@ -50,7 +48,7 @@ function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-base leading-[19px] font-medium Urbanist text-white/60'>
+                            <Link href="#contact" className='text-base leading-[19px] font-medium Urbanist text-white/60'>
                                 Contact Us
                             </Link>
                         </li>

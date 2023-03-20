@@ -15,7 +15,7 @@ export default function Header() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link href="#">
-              <Logo Fill_color="#7933D1"/>
+              <Logo Fill_color="text-primary"/>
               </Link>
               <div className="md:hidden">
                 <button
@@ -86,7 +86,7 @@ export default function Header() {
           </div>
           <div className="flex justify-between md:mt-0 mt-5">
             <button
-              className="px-6 py-4 bg-transparent rounded-[67px] text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
+              className="px-6 py-4 bg-transparent rounded-[67px] text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 border-2 border-primary hover:border-primary/70 md:mr-2 outline-none w-[120px]"
               onClick={() => setNavbar(!navbar)}
             >
               Log in

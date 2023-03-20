@@ -43,7 +43,7 @@ function AboutUs() {
                     </svg>
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-12'>
                         <div className='w-full h-full bg-gradient-to-t relative from-[#e3ddec79] md:px-12 md:py-12 py-10 px-5 rounded-[24px] border border-shade/10'>
-                            <div>
+                            <div id="contact">
                                 <h3 className='md:text-[32px] md:leading-[38px] text-2xl font-bold Urbanist text-shade mb-8'>
                                     Follow Us
                                 </h3>

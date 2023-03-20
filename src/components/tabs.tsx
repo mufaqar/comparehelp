@@ -101,7 +101,7 @@ const Tabs = () => {
                                     <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
                                             <h3 className="md:text-[42px] md:leading-[50px] text-3xl font-extrabold Urbanist text-primary mb-5">
-                                                Select Articles2
+                                                Select Articles
                                             </h3>
                                             <ul className="list-decimal list-inside gap-3 grid">
                                                 <li className="text-base font-medium text-shade/90">
@@ -124,7 +124,7 @@ const Tabs = () => {
                                     <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center">
                                         <div>
                                             <h3 className="md:text-[42px] md:leading-[50px] text-3xl font-extrabold Urbanist text-primary mb-5">
-                                                Select Articles3
+                                                Select Articles
                                             </h3>
                                             <ul className="list-decimal list-inside gap-3 grid">
                                                 <li className="text-base font-medium text-shade/90">

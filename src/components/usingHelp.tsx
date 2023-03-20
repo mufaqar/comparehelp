@@ -22,9 +22,6 @@ function UsingHelp() {
                         <h2 className='md:text-5xl md:leading-[57px] text-3xl font-extrabold Urbanist text-white text-center'>
                             After Using CompreHelp
                         </h2>
-                        <p className='text-lg leading-6 font-medium Urbanist text-white text-center'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut ex eget augue interdum pellentesque. Phasellus nisi nisi,
-                        </p>
                     </motion.div>
                     <div className='relative'>
                         <svg className='absolute sm:top-[-20px] sm:left-[-30px] top-[-15px] left-[-20px] sm:w-auto w-[25px]' width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg" >
@@ -47,7 +44,7 @@ function UsingHelp() {
                                         Speed
                                     </h3>
                                     <p className='text-xl font-medium Urbanist text-white text-center'>
-                                        It takes x seconds to generate a quiz/question
+                                        It takes 60 seconds to generate a quiz/question
                                     </p>
                                 </div>
                             </div>
@@ -58,7 +55,7 @@ function UsingHelp() {
                                         Time
                                     </h3>
                                     <p className='text-xl font-medium Urbanist text-white text-center'>
-                                        It can save y% time.
+                                        It can save 5000 time.
                                     </p>
                                 </div>
                             </div>
@@ -69,7 +66,7 @@ function UsingHelp() {
                                         Cost
                                     </h3>
                                     <p className='text-xl font-medium Urbanist text-white text-center'>
-                                        Saved z% of the total cost
+                                        Saved 5000% of the total cost
                                     </p>
                                 </div>
                             </div>

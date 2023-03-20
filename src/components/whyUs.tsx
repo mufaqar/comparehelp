@@ -48,7 +48,7 @@ function WhyUs() {
                             />
                         </div>
                         <p className='text-xl font-medium Urbanist text-shade/60 text-center max-w-[673px] mx-auto'>
-                            Whenever x articles are generated, the lower display shows: It saves y hour and increases efficiency by z%.
+                            Whenever 1”-“100” articles are generated, the lower display shows: It saves “5-500” hour and increases efficiency by “5000%”.
                         </p>
                         <button
                             className="px-6 py-4 bg-primary rounded-[67px] text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[160px] mx-auto"
