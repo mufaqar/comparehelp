@@ -62,11 +62,6 @@ function Footer() {
                                 FAQ’s
                             </Link>
                         </li>
-                        <li>
-                            <Link href="#" className='text-base leading-[19px] font-medium Urbanist text-white/60'>
-                                Career
-                            </Link>
-                        </li>
                     </ul>
                 </div>
                 <div>
