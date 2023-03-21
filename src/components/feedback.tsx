@@ -10,11 +10,52 @@ import Slider from "react-slick";
 import { motion, Variants } from "framer-motion";
 import { fadeUp } from '@/animation';
 
+
+
+export const Reviews = [
+    {
+        id:1,
+        nextid: 2,
+        title: "Fantastic",
+        Logo: Customer1,
+        name:"John",
+        position: "Student",
+        review: "It works great! I was able to input the text and let Comprehelp help me generate questions. I can then send them to my students to check their familiarity with the textbook, which makes my Select articles • Select from different themes, difficulty and length of news • Input the text • Select the level of simplification of the article Generate • Click the button and wait for generated questions Form quiz • Select the questions you want • Save as PDF or save to the dashboard work much more efficient",
+    },
+    {
+        id:2,
+        nextid: 3,
+        title: "Fantastic1",
+        Logo: Customer1,
+        name:"John",
+        position: "Customer",
+        review: "It works great! I was able to input the text and let Comprehelp help me generate questions. I can then send them to my students to check their familiarity with the textbook, which makes my Select articles • Select from different themes, difficulty and length of news • Input the text • Select the level of simplification of the article Generate • Click the button and wait for generated questions Form quiz • Select the questions you want • Save as PDF or save to the dashboard work much more efficient",
+    },
+    {
+        id:3,
+        nextid: 4,
+        title: "Fantastic2",
+        Logo: Customer1,
+        name:"John",
+        position: "Customer",
+        review: "It works great! I was able to input the text and let Comprehelp help me generate questions. I can then send them to my students to check their familiarity with the textbook, which makes my Select articles • Select from different themes, difficulty and length of news • Input the text • Select the level of simplification of the article Generate • Click the button and wait for generated questions Form quiz • Select the questions you want • Save as PDF or save to the dashboard work much more efficient",
+    },
+    {
+        id:4,
+        nextid: 1,
+        title: "Fantastic3",
+        Logo: Customer1,
+        name:"John",
+        position: "Customer",
+        review: "It works great! I was able to input the text and let Comprehelp help me generate questions. I can then send them to my students to check their familiarity with the textbook, which makes my Select articles • Select from different themes, difficulty and length of news • Input the text • Select the level of simplification of the article Generate • Click the button and wait for generated questions Form quiz • Select the questions you want • Save as PDF or save to the dashboard work much more efficient",
+    },
+]
+
 export default class Feedback extends Component {
-    state = {
-        activeSlide: 0,
-        activeSlide2: 1
-    };
+    // state = {
+    //     activeSlide: 1,
+    //     activeSlide2: 4
+    // };
 
     render() {
         const settings = {
@@ -26,7 +67,7 @@ export default class Feedback extends Component {
             nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
             prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
             beforeChange: (_current: any, next: any) => this.setState({ activeSlide: next }),
-            afterChange: (current: any) => this.setState({ activeSlide2: current + 1 })
+            afterChange: (current: any) => this.setState({ activeSlide2: current +1})
         };
         return (
             <motion.section
@@ -50,7 +91,54 @@ export default class Feedback extends Component {
                         </motion.div>
                         <div className='relative'>
                             <Slider {...settings}>
-                                <div>
+                                {Reviews.map((item: any, index: number) => (
+                                    <div key={index}>
+                                        <div className='grid grid-cols-2 mb-5'>
+                                            <ul className='inline-flex items-center'>
+                                                <li className='text-[32px] leading-[38px] font-medium Urbanist text-white'>0{item.id}</li>
+                                                <li className='text-xl leading-6 font-medium Urbanist text-white/60'> /0{item.nextid}</li>
+                                            </ul>
+                                            <ul className='inline-flex items-center justify-end gap-1 text-[#FAB005]'>
+                                                <li>
+                                                    <AiFillStar size={16} />
+                                                </li>
+                                                <li>
+                                                    <AiFillStar size={16} />
+                                                </li>
+                                                <li>
+                                                    <AiFillStar size={16} />
+                                                </li>
+                                                <li>
+                                                    <AiFillStar size={16} />
+                                                </li>
+                                                <li>
+                                                    <AiFillStar size={16} />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className='mb-14'>
+                                            <h3 className='text-2xl leading-[25px] font-semibold Urbanist text-white mb-3'>
+                                                {item.title}
+                                            </h3>
+                                            <p className='text-lg leading-[25px] font-medium Urbanist text-white/60'>
+                                               {item.review}
+                                            </p>
+                                        </div>
+                                        <div className='grid grid-cols-2 justify-between'>
+                                            <div className='flex gap-3'>
+                                                <Image src={Customer1} alt="" />
+                                                <ul className='inline items-center'>
+                                                    <li className='text-xl leading-6 font-medium Urbanist text-white'>{item.name}</li>
+                                                    <li className='text-base leading-[19px] font-medium Urbanist text-white/60'>{item.position}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+
+
+
+                                {/* <div>
                                     <div className='grid grid-cols-2 mb-5'>
                                         <ul className='inline-flex items-center'>
                                             <li className='text-[32px] leading-[38px] font-medium Urbanist text-white'>0{this.state.activeSlide}</li>
@@ -175,49 +263,7 @@ export default class Feedback extends Component {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div className='grid grid-cols-2 mb-5'>
-                                        <ul className='inline-flex items-center'>
-                                            <li className='text-[32px] leading-[38px] font-medium Urbanist text-white'>0{this.state.activeSlide}</li>
-                                            <li className='text-xl leading-6 font-medium Urbanist text-white/60'> /0{this.state.activeSlide2}</li>
-                                        </ul>
-                                        <ul className='inline-flex items-center justify-end gap-1 text-[#FAB005]'>
-                                            <li>
-                                                <AiFillStar size={16} />
-                                            </li>
-                                            <li>
-                                                <AiFillStar size={16} />
-                                            </li>
-                                            <li>
-                                                <AiFillStar size={16} />
-                                            </li>
-                                            <li>
-                                                <AiFillStar size={16} />
-                                            </li>
-                                            <li>
-                                                <AiFillStar size={16} />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='mb-14'>
-                                        <h3 className='text-2xl leading-[25px] font-semibold Urbanist text-white mb-3'>
-                                            Fantastic12346
-                                        </h3>
-                                        <p className='text-lg leading-[25px] font-medium Urbanist text-white/60'>
-                                            It works great! I was able to input the text and let Comprehelp help me generate questions. I can then send them to my students to check their familiarity with the textbook, which makes my Select articles • Select from different themes, difficulty and length of news • Input the text • Select the level of simplification of the article Generate • Click the button and wait for generated questions Form quiz • Select the questions you want • Save as PDF or save to the dashboard work much more efficient
-                                        </p>
-                                    </div>
-                                    <div className='grid grid-cols-2 justify-between'>
-                                        <div className='flex gap-3'>
-                                            <Image src={Customer1} alt="" />
-                                            <ul className='inline items-center'>
-                                                <li className='text-xl leading-6 font-medium Urbanist text-white'>John</li>
-                                                <li className='text-base leading-[19px] font-medium Urbanist text-white/60'>Student</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> */}
                             </Slider>
                         </div>
                     </div>
