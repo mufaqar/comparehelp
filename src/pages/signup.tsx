@@ -5,7 +5,7 @@ import Girl from '../../public/images/girl.png';
 import { motion, Variants } from "framer-motion";
 import { fadeUp } from '@/animation';
 
-function Banner() {
+function Signup() {
     return (
         <motion.section
             initial={"offscreen"}
@@ -26,7 +26,7 @@ function Banner() {
                         </span>
                     </h2>
                     <p className='text-lg leading-6 font-medium Urbanist text-shade/80'>
-                        Comprehelp comes with news resources of different fields and difficulties and can refine the content of the articles, and then generate multiple titles based on the content of the articles.
+                        Single click, Multiple questions
                     </p>
                     <div className="mt-10">
                         <form className="flex md:flex-row flex-col gap-3 w-full items-center">
@@ -57,4 +57,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Signup

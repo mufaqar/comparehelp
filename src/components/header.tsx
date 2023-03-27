@@ -62,7 +62,7 @@ export default function Header() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-12 md:space-y-0">
                 <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
-                  <Link href="#">
+                  <Link href="/">
                     Home
                   </Link>
                 </li>
@@ -72,7 +72,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="Urbanist text-base leading-[19.2px] text-shade/60 hover:text-primary active:text-primary font-bold">
-                  <Link href="#">
+                  <Link href="/subscribe">
                     Price & Help
                   </Link>
                 </li>
@@ -85,18 +85,20 @@ export default function Header() {
             </div>
           </div>
           <div className="flex justify-between md:mt-0 mt-5">
-            <button
-              className="px-6 py-4 bg-transparent rounded-[67px] text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 border-2 border-primary hover:border-primary/70 md:mr-2 outline-none w-[120px]"
+            <Link
+            href="#"
+              className="px-6 py-4 bg-transparent rounded-[67px] text-center text-primary hover:text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 border-2 border-primary hover:border-primary/70 md:mr-2 outline-none w-[120px]"
               onClick={() => setNavbar(!navbar)}
             >
               Log in
-            </button>
-            <button
-              className="px-6 py-4 bg-primary rounded-[67px] text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
+            </Link>
+            <Link
+            href="/signup"
+              className="px-6 py-4 bg-primary rounded-[67px] text-center text-white Urbanist text-base leading-[19.2px] font-semibold hover:bg-primary/70 outline-none w-[120px]"
               onClick={() => setNavbar(!navbar)}
             >
               Sign Up
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
