@@ -12,7 +12,7 @@ function Pricing() {
                         {item.time}
                     </span>
                     <div className='my-10'>
-                        <h2 className={`${item.isHighlighted === true ? 'text-white' : 'text-shade'} md:text-[32px] md:leading-[44px] font-semibold Urbanist text-center mb-8 `}>
+                        <h2 className={`${item.isHighlighted === true ? 'text-white' : 'text-shade'} md:text-[32px] md:leading-[44px] text-2xl font-semibold Urbanist text-center mb-8 `}>
                             {item.title}
                         </h2>
                         <ul className={`${item.isHighlighted === true ? 'text-white' : 'text-shade/80'} flex flex-col gap-3`}>
@@ -27,18 +27,18 @@ function Pricing() {
                         </ul>
                     </div>
                     <div className={`${item.isHighlighted === true ? 'bg-white/5' : 'bg-shade/5'}   rounded-2xl py-8`}>
-                        <h3 className='md:text-[40px] md:leading-[44px] font-bold Urbanist text-center text-primary'>
+                        <h3 className='md:text-[40px] md:leading-[44px] text-2xl font-bold Urbanist text-center text-primary'>
                             {item.price}
                             <span className={`md:text-xl md:leading-[36px] font-medium Urbanist text-center ${item.isHighlighted === true ? 'text-white' : 'text-shade/80'} `}>
                                 /month
                             </span>
                         </h3>
-                        <span className={`md:text-xl md:leading-[36px] font-medium Urbanist text-center block mx-auto ${item.isHighlighted === true ? 'text-white' : 'text-shade/80'} `}>
+                        <span className={`md:text-xl md:leading-[36px] text-base font-medium Urbanist text-center block mx-auto ${item.isHighlighted === true ? 'text-white' : 'text-shade/80'} `}>
                             {item.desc}
                         </span>
                     </div>
                     <div>
-                        <span className={`md:text-xl md:leading-[36px] font-medium Urbanist text-center block mx-auto mt-10 ${item.isHighlighted === true ? 'text-white' : 'text-shade/80'} `}>
+                        <span className={`md:text-xl md:leading-[36px] text-base font-medium Urbanist text-center block mx-auto mt-10 ${item.isHighlighted === true ? 'text-white' : 'text-shade/80'} `}>
                             {item.or}
                         </span>
                         <h5 className={`text-lg font-bold Urbanist text-center ${item.isHighlighted === true ? 'text-white' : 'text-shade'} `}>
