@@ -50,7 +50,7 @@ function AboutUs() {
                                 <ul className='grid gap-4'>
                                     <li>
                                         <Link href="https://www.instagram.com/CompareHelp" target="_blank"
-                                            className='text-base font-medium text-shade Urbanist inline-flex items-center'>
+                                            className='text-base font-medium text-shade Urbanist inline-flex flex-wrap items-center'>
                                             <AiFillInstagram size={10} className="bg-white text-primary md:w-12 md:h-12 md:py-3 rounded-[44px] md:mr-4  w-6 h-6 p-1 scale-100 hover:scale-75" />
                                             https://www.instagram.com<span className='text-primary font-semibold'>/CompareHelp
                                             </span>
@@ -58,7 +58,7 @@ function AboutUs() {
                                     </li>
                                     <li>
                                         <Link href="https://www.facebook.com/CompareHelp" target="_blank"
-                                            className='text-base font-medium text-shade Urbanist inline-flex items-center'>
+                                            className='text-base font-medium text-shade Urbanist inline-flex flex-wrap items-center'>
                                             <FaFacebookF size={10} className="bg-white text-primary md:w-12 md:h-12 md:py-3 rounded-[44px] md:mr-4  w-6 h-6 p-1 scale-100 hover:scale-75" />
                                             https://www.facebook.com<span className='text-primary font-semibold'>/CompareHelp
                                             </span>
@@ -66,7 +66,7 @@ function AboutUs() {
                                     </li>
                                     <li>
                                         <Link href="https://www.linkedin.com/CompareHelp" target="_blank"
-                                            className='text-base font-medium text-shade Urbanist inline-flex items-center'>
+                                            className='text-base font-medium text-shade Urbanist inline-flex flex-wrap items-center'>
                                             <FaLinkedinIn size={10} className="bg-white text-primary md:w-12 md:h-12 md:py-3 rounded-[44px] md:mr-4  w-6 h-6 p-1 scale-100 hover:scale-75" />
                                             https://www.linkedin.com<span className='text-primary font-semibold'>/CompareHelp
                                             </span>
@@ -74,7 +74,7 @@ function AboutUs() {
                                     </li>
                                     <li>
                                         <Link href="https://twitter.com/CompareHelp" target="_blank"
-                                            className='text-base font-medium text-shade Urbanist inline-flex items-center'>
+                                            className='text-base font-medium text-shade Urbanist inline-flex flex-wrap items-center'>
                                             <FaTwitter size={10} className="bg-white text-primary md:w-12 md:h-12 md:py-3 rounded-[44px] md:mr-4  w-6 h-6 p-1 scale-100 hover:scale-75" />
                                             https://twitter.com<span className='text-primary font-semibold'>/CompareHelp
                                             </span>
@@ -92,21 +92,21 @@ function AboutUs() {
                                 <ul className='grid gap-4'>
                                     <li>
                                         <Link href="telto:(302) 555-0107" target="_blank"
-                                            className='text-base font-medium text-primary Urbanist inline-flex items-center'>
+                                            className='text-base font-medium text-primary Urbanist inline-flex items-center flex-wrap'>
                                             <BsFillTelephoneFill size={10} className="bg-white text-primary md:w-12 md:h-12 md:py-3 rounded-[44px] md:mr-4  w-6 h-6 p-1 scale-100 hover:scale-75" />
                                             (302) 555-0107
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="mailto:info@comparehelp.com" target="_blank"
-                                            className='text-base font-medium text-primary Urbanist inline-flex items-center'>
+                                            className='text-base font-medium text-primary Urbanist inline-flex items-center flex-wrap'>
                                             <BiEnvelope size={10} className="bg-white text-primary md:w-12 md:h-12 md:py-3 rounded-[44px] md:mr-4  w-6 h-6 p-1 scale-100 hover:scale-75" />
                                             info@comparehelp.com
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="#" target="_blank"
-                                            className='text-base font-medium text-primary Urbanist inline-flex items-center'>
+                                            className='text-base font-medium text-primary Urbanist inline-flex items-center flex-wrap'>
                                             <HiLocationMarker size={10} className="bg-white text-primary md:w-12 md:h-12 md:py-3 rounded-[44px] md:mr-4  w-6 h-6 p-1 scale-100 hover:scale-75" />
                                             3517 W. Gray St. Utica,
                                             Pennsylvania 57867
