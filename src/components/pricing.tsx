@@ -16,7 +16,7 @@ function Pricing() {
                         </h2>
                         <ul className={`${item.isHighlighted === true ? 'text-white' : 'text-shade/80'} flex flex-col gap-3`}>
                             {item.features?.map((item: any, index: number) => (
-                                <li className={` flex text-base leading-[22px] font-medium Urbanist space-x-2 `}>
+                                <li key={index} className={` flex text-base leading-[22px] font-medium Urbanist space-x-2 `}>
                                     <BsCheckCircle size={24} className="text-primary" />
                                     <span>
                                         Remove the daily limit on the number of articles generated.
